@@ -17,10 +17,11 @@ function App() {
     if (data && data.list) {
       const dailyForecasts = [];
       const usedDates = new Set();
+      const today = new Date().toLocaleDateString();
       for (let i = 0; i < data.list.length; i++) {
         const forecast = data.list[i];
         const date = new Date(forecast.dt * 1000).toLocaleDateString();
-        if (!usedDates.has(date)) {
+        if (date !== today && !usedDates.has(date)) {
           dailyForecasts.push(forecast);
           usedDates.add(date);
         }
