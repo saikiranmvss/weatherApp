@@ -21,7 +21,9 @@ h1 {
 
 #city {
   padding: 10px;
+  margin-right: 1rem;
   font-size: 16px;
+  border-radius: 5px;
 }
 
 #searchBtn {
@@ -31,10 +33,15 @@ h1 {
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 #searchBtn:hover {
   background-color: #ff7c00;
+}
+
+.cityName{
+  border: 1px solid #ff8c00;
 }
 
 .loader {
@@ -135,10 +142,6 @@ p {
 
   #city {
     margin-bottom: 10px;
-    width: 100%;
-  }
-
-  #searchBtn {
     width: 100%;
   }
 
